@@ -1,0 +1,43 @@
+/* On importe les fonts si le navigateur ne les à pas */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/* Simple reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh; /* Important pour avoir un loader qui prends toute la page */
+}
+/* Début css du loader */
+#loader {
+  z-index: 999; /* On le met tout en haut niveau hierarchie*/
+  
+  font-family: 'Poppins', sans-serif; 
+  color: #fff;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  height: 100vh;
+  width: 100%;
+  
+  background: #111;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  transition: opacity .2s ease-in-out;
+}
+.btn {
+  padding: 15px 30px;
+  background: #27272b;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #222;
+}
+/* Fin css du loader */
