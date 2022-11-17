@@ -1,5 +1,12 @@
 /* On importe les fonts si le navigateur ne les à pas */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* On importe la font tf2build sous le nom de tf2 */
+@font-face {
+  font-family: "tf2";
+  src: url("../fonts/tf2build.ttf");
+}
+/* Pour utiliser la font : font-family: 'tf2', sans-serif; */
 /* Simple reset css */
 * {
   margin: 0;
