@@ -15,6 +15,11 @@
   font-family: "TF2";
 }
 
+/* Variables */
+:root {
+  --nav-height: 50px;
+}
+
 body {
   height: 100%;
   min-height: 100vh; /* Important pour avoir un loader qui prends toute la page */
@@ -72,13 +77,27 @@ body {
 /* Fin css du loader */
 
 .topnav {
-  flex: 0 1 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
   background-color: #333;
   overflow: hidden;
+  height: var(--nav-height);
+  width: 100%;
 }
 
+.topnav .img-logo img {
+  height: calc(var(--nav-height) - 10px);
+  object-fit: contain;
+}
 .topnav a {
-  float: left;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -87,16 +106,35 @@ body {
 }
 
 .middle {
+  
   flex: 1 1 auto;
-  background-color: rebeccapurple;
+  background-color: #3C3D3F;
   background-image: url(../../data/image/BackgroundTF.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  min-height: calc(100vh - var(--nav-height));
 }
-
+.pag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(100vw/3);
+  height: 100vh;
+}
 footer {
+  display: flex;
+  gap: 25px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   padding: 2%;
   background-color: #27272b;
 }
 
+footer a {
+  color: #fff;
+}
 .imgLogo {
   background-image: url(../../data/image/logoTF2.png);
 }
