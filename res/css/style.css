@@ -121,18 +121,22 @@ body {
 }
 .classes {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 25px 100%;
-  border-radius: 5px;
+  padding: 25px 10%;
   color: #fff;
+  width: 100%;
 }
 .classes td {
+  text-align: center;
   gap: 25px;
   padding: 10px 5px;
+  flex-direction: column;
+  align-items: center;
 }
 .classes th {
   padding-bottom: 15px;
 }
 .classes .img {
+  margin: 0 auto;
   height: var(--classes-logo-size);
   width: var(--classes-logo-size);
 }
@@ -143,8 +147,6 @@ body {
 }
 .classes span {
   display: block;
-  width: 100%;
-  text-align: center;
 }
 
 footer {
