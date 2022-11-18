@@ -12,11 +12,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "TF2";
 }
 
 body {
   min-height: 100vh; /* Important pour avoir un loader qui prends toute la page */
 }
+
 /* Début css du loader */
 #loader {
   z-index: 999; /* On le met tout en haut niveau hierarchie*/
@@ -44,7 +46,30 @@ body {
   background: #27272b;
   cursor: pointer;
 }
+
 .btn:hover {
   background: #222;
 }
 /* Fin css du loader */
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.page {
+  background-image: url(../../data/image/BackgroundTF.png);
+}
+
+footer {
+  background-color: #27272b;
+}
