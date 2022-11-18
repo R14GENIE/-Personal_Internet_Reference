@@ -88,6 +88,7 @@ body {
 
 .middle {
   flex: 1 1 auto;
+  background-color: rebeccapurple;
   background-image: url(../../data/image/BackgroundTF.png);
 }
 
