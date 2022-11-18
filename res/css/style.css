@@ -114,14 +114,14 @@ body {
   background-color: #3C3D3F;
   background-image: url(../../data/image/BackgroundTF.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
   background-position: center;
   min-height: calc(100vh - var(--nav-height));
   padding-top: var(--nav-height);
 }
 .classes {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 25px 50px;
+  padding: 25px 100%;
   border-radius: 5px;
   color: #fff;
 }
@@ -146,6 +146,7 @@ body {
   width: 100%;
   text-align: center;
 }
+
 footer {
   display: flex;
   gap: 25px;
