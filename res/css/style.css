@@ -115,13 +115,18 @@ body {
   background-position: center;
   min-height: calc(100vh - var(--nav-height));
 }
-.pag {
+
+.Class {
   display: flex;
+  flex-direction: wrap;
+  columns: 3;
+  gap: 5%;
   align-items: center;
   justify-content: center;
-  font-size: calc(100vw/3);
+  font-size: 50px;
   height: 100vh;
 }
+
 footer {
   display: flex;
   gap: 25px;
