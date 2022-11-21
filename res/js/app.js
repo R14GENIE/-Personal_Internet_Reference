@@ -14,4 +14,3 @@ loader.addEventListener('transitionend', () => {
   audio.play()
 })
 
- 

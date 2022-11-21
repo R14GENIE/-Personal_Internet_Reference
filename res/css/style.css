@@ -81,13 +81,25 @@ body {
   transition: opacity .5s ease-in-out;
 }
 
+#loaderMeet span {
+  padding: 15px;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
 .loaderLogo{
   align-items: center;
   width: 600px;
   height: auto;
 }
-
-.MeetLogo{
+.MeetLogo {
+  z-index: -1;
+  top:0;
+  left: 0;
+  position: absolute;
   align-items: center;
   height: 100vh;
   width: 100vw;
