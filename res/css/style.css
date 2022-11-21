@@ -54,11 +54,46 @@ body {
   transition: opacity .2s ease-in-out;
 }
 
+#loaderMeet {
+  z-index: 999; /* On le met tout en haut niveau hierarchie*/
+  
+  font-family: 'Poppins', sans-serif; 
+  color: #fff;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  height: 100vh;
+  width: 100%;
+  
+  background: #111;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+
+  text-align: center;
+
+  align-items: center;
+  justify-content: center;
+  
+  transition: opacity .5s ease-in-out;
+}
+
 .loaderLogo{
   align-items: center;
   width: 600px;
   height: auto;
 }
+
+.MeetLogo{
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
 
 .box {
   display: flex;
