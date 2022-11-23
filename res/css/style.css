@@ -162,10 +162,16 @@ body {
     background-size: 100%;
     background-position: center;
     min-height: calc(100vh - var(--nav-height));
-    padding-top: var(--nav-height);
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: flex-start;
-
+    padding: calc( 15px + var(--nav-height)) 30px 0;
+  
+}
+.middleAutre .text-wrapper {
+  background-color: red;
+  border: 2mm solid hsla(38, 11%, 34%, 0.6);
+  background-color: hsla(36, 5%, 37%, 0.6); 
 }
 
 .middleMain {
@@ -235,8 +241,6 @@ h1 {
   text-align: left;
   margin-top: 2%;
   margin-left: 2%;
-  border: 2mm solid hsla(38, 11%, 34%, 0.6);
-  background-color: hsla(36, 5%, 37%, 0.6);
 }
 
 h2 {
@@ -244,8 +248,6 @@ h2 {
   text-align: left;
   margin-top: 2%;
   margin-left: 2%;
-  border: 2mm solid hsla(38, 11%, 34%, 0.6);
-  background-color: hsla(36, 5%, 37%, 0.6);
 }
 
 .italique {
@@ -257,8 +259,6 @@ h2 {
   text-align: left;
   margin-top: 2%;
   margin-left: 2%;
-  border: 2mm solid hsla(38, 11%, 34%, 0.6);
-  background-color: hsla(36, 5%, 37%, 0.6); 
 }
 
 .pictureClass {
