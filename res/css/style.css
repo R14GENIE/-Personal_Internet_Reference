@@ -278,10 +278,10 @@ h2 {
   margin-left: 2%;
   border: 2mm solid hsla(38, 11%, 34%, 0.6);
   background-color: hsla(36, 5%, 37%, 0.6); 
-  animation: animation 1s ease-in-out infinite alternate;
-  -moz-animation: animation 1s ease-in-out infinite alternate;
-  -webkit-animation: animation 1s ease-in-out infinite alternate;
-  -o-animation: animation 1s ease-in-out infinite alternate;
+  animation: animation 0s ease-in-out infinite alternate;
+  -moz-animation: animation 0s ease-in-out infinite alternate;
+  -webkit-animation: animation 0s ease-in-out infinite alternate;
+  -o-animation: animation 0s ease-in-out infinite alternate;
 }
 
 .pictureClass {
@@ -291,6 +291,20 @@ h2 {
   margin-left: 2%;
   border: 2mm solid hsla(38, 11%, 34%, 0.6);
   background-color: hsla(36, 5%, 37%, 0.6); 
+}
+
+.pictureClassButton {
+  font-size: 17px;
+  align-content: right;
+  margin-top: 2%;
+  margin-left: 2%;
+  border: 2mm solid hsla(30, 17%, 5%, 0.6);
+  background-color: hsla(36, 5%, 37%, 0.6);
+  cursor: pointer; 
+}
+
+.pictureClassButton:hover {
+  background: rgb(155, 85, 5);
 }
 
 iframe {
