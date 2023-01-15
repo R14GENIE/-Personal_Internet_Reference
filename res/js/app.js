@@ -6,6 +6,7 @@ function loadPage() {
   loader.style.opacity = 0
 }
 loader.style.opacity = 0
+loader.style.display = "none"
 // Une fois que le loader est invisible on le display none pour ne plus avoir aucune interaction avec
 loader.addEventListener('transitionend', () => { 
   loader.style.display = "none"
