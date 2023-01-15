@@ -6,6 +6,11 @@
   font-family: "tf2";
   src: url("../fonts/tf2build.ttf");
 }
+
+@font-face {
+  font-family: "VHS";
+  src: url("../fonts/VCR_OSD_MONO.ttf");
+}
 /* Pour utiliser la font : font-family: 'tf2', sans-serif; */
 /* Simple reset css */
 * {
@@ -309,6 +314,10 @@ h2 {
 iframe {
   width: 100%;
   height: 300px;
+}
+
+.minosPolice{
+  font-family: "VHS";
 }
 
 /* Animation Page pyro*/
