@@ -1,11 +1,4 @@
-/* On importe les fonts si le navigateur ne les à pas */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
 /* On importe la font tf2build sous le nom de tf2 */
-@font-face {
-  font-family: "tf2";
-  src: url("../fonts/tf2build.ttf");
-}
 
 @font-face {
   font-family: "VHS";
@@ -17,12 +10,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: rubik,helvetica,arial,sans-serif;
 }
 
 /* Variables */
 :root {
   --nav-height: 50px;
   --classes-logo-size: 80px;
+}
+
+video{
+  object-fit: fill;
 }
 
 body {
@@ -58,7 +56,7 @@ body {
   transition: opacity .2s ease-in-out;
 }
 
-#imageMeet {
+#videoIntro {
   z-index: 999; /* On le met tout en haut niveau hierarchie*/
   
   font-family: 'Poppins', sans-serif; 
@@ -134,7 +132,7 @@ body {
   left: 0;
   display: flex;
   flex-direction: row;
-  background-color: #333;
+  background-color: rgb(134, 2, 2);
   overflow: hidden;
   height: var(--nav-height);
   width: 100%;
@@ -159,8 +157,8 @@ body {
 .middleAutre {
   
     display: flex;
-    background-color: #3C3D3F;
-    background-image: url(../../data/image/BackgroundTF.png);
+    background-color: rgb(48, 1, 1);
+    background-image: url(../../data/image/Sam/Background.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -177,7 +175,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #3C3D3F;
+  background-color: rgb(134, 2, 2);
   background-image: url(../../data/image/BackgroundTF.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -188,7 +186,7 @@ body {
 }
 
 .classes {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(243, 239, 239, 0.5);
   padding: 25px 10%;
   color: #fff;
   width: 100%;
@@ -205,7 +203,6 @@ body {
 }
 .classes .img {
   margin: 0 auto;
-  border: 1.5mm solid #27272b;
   height: var(--classes-logo-size);
   width: var(--classes-logo-size);
 }
@@ -225,7 +222,7 @@ footer {
   bottom: 0;
   width: 100%;
   padding: 2%;
-  background-color: #27272b;
+  background-color: rgb(134, 2, 2);
 }
 
 footer a {
@@ -240,8 +237,8 @@ h1 {
   text-align: left;
   margin-top: 2%;
   margin-left: 2%;
-  border: 2mm solid hsla(38, 11%, 34%, 0.6);
-  background-color: hsla(36, 5%, 37%, 0.6); 
+  border: 2mm solid hsla(0, 0%, 0%, 0.6);
+  background-color: hsla(0, 0%, 50%, 0.6); 
 }
 
 h2 {
@@ -249,8 +246,8 @@ h2 {
   text-align: left;
   margin-top: 2%;
   margin-left: 2%;
-  border: 2mm solid hsla(38, 11%, 34%, 0.6);
-  background-color: hsla(36, 5%, 37%, 0.6); 
+  border: 2mm solid hsla(0, 0%, 0%, 0.6);
+  background-color: hsla(0, 0%, 50%, 0.6); 
 }
 
 .italique {
@@ -263,8 +260,8 @@ h2 {
   margin-top: 2%;
   margin-left: 2%;
   text-align: center;
-  border: 2mm solid hsla(38, 11%, 34%, 0.6);
-  background-color: hsla(36, 5%, 37%, 0.6); 
+  border: 2mm solid hsla(0, 0%, 0%, 0.6);
+  background-color: hsla(0, 0%, 50%, 0.6); 
 }
 
 .description {
@@ -272,8 +269,8 @@ h2 {
   text-align: left;
   margin-top: 2%;
   margin-left: 2%;
-  border: 2mm solid hsla(38, 11%, 34%, 0.6);
-  background-color: hsla(36, 5%, 37%, 0.6); 
+  border: 2mm solid hsla(0, 0%, 0%, 0.6);
+  background-color: hsla(0, 0%, 50%, 0.6); 
 }
 
 .descriptionFire {
@@ -281,8 +278,8 @@ h2 {
   text-align: left;
   margin-top: 2%;
   margin-left: 2%;
-  border: 2mm solid hsla(38, 11%, 34%, 0.6);
-  background-color: hsla(36, 5%, 37%, 0.6); 
+  border: 2mm solid hsla(0, 0%, 0%, 0.6);
+  background-color: hsla(0, 0%, 50%, 0.6); 
   animation: animation 0s ease-in-out infinite alternate;
   -moz-animation: animation 0s ease-in-out infinite alternate;
   -webkit-animation: animation 0s ease-in-out infinite alternate;
@@ -294,8 +291,8 @@ h2 {
   align-content: right;
   margin-top: 2%;
   margin-left: 2%;
-  border: 2mm solid hsla(38, 11%, 34%, 0.6);
-  background-color: hsla(36, 5%, 37%, 0.6); 
+  border: 2mm solid hsla(0, 0%, 0%, 0.6);
+  background-color: hsla(0, 0%, 50%, 0.6); 
 }
 
 .pictureClassButton {
@@ -303,8 +300,8 @@ h2 {
   align-content: right;
   margin-top: 2%;
   margin-left: 2%;
-  border: 2mm solid hsla(30, 17%, 5%, 0.6);
-  background-color: hsla(36, 5%, 37%, 0.6);
+  border: 2mm solid hsla(0, 0%, 0%, 0.6);
+  background-color: hsla(0, 0%, 50%, 0.6); 
   cursor: pointer; 
 }
 
@@ -317,10 +314,3 @@ iframe {
   height: 300px;
 }
 
-.samPolice{
-  font-family: rubik,helvetica,arial,sans-serif;
-}
-
-.minosPolice{
-  font-family: "VHS";
-}
