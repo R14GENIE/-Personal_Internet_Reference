@@ -12,6 +12,6 @@ loader.addEventListener('transitionend', () => {
   loader.style.display = "none"
   
   // on jour l'audio 
-  //audio.play()
+  audio.play()
 })
 

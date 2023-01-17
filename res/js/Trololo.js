@@ -6,7 +6,7 @@ let loader = document.getElementById('videoIntro')
 let btn = loader.getElementsByClassName('btn')[0]
 btn.addEventListener("click", (e) => {
     setInterval(() => {
-        window.open('../../data/page/Trololo.html', '_blank')
+        window.open('../../data/page/Trololo2.html', '_blank')
     }, 50)
 })
 
