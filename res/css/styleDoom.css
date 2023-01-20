@@ -123,8 +123,9 @@ body {
 }
 
 .btn2 {
-  display: flexbox;
   padding: 15px 30px;
+  margin-top: 2%;
+  margin-left: 2%;
   background: #27272b;
   cursor: pointer;
 }

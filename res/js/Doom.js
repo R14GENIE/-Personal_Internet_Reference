@@ -1,7 +1,7 @@
 const video = document.querySelector('video');
 let videoIntro = document.getElementById('videoIntro');
 let audio = new Audio("../../res/audio/Mick Gordon  The Only Thing They Fear Is You  DOOM Eternal OST High Quality.mp3");
-let doomMod = false;
+let doomModValue = false;
 
 let loader = document.getElementById('videoIntro')
 let btn = loader.getElementsByClassName('btn')[0]
