@@ -11,6 +11,11 @@
   font-family: "VHS";
   src: url("../fonts/VCR_OSD_MONO.ttf");
 }
+
+@font-face {
+  font-family: "DOOM";
+  src: url("../fonts/AmazDooMLeft.ttf");
+}
 /* Pour utiliser la font : font-family: 'tf2', sans-serif; */
 /* Simple reset css */
 * {
@@ -318,9 +323,16 @@ iframe {
 }
 
 .samPolice{
+  color: rgb(95, 3, 3);
   font-family: rubik,helvetica,arial,sans-serif;
 }
 
 .minosPolice{
+  color: purple;
   font-family: "VHS";
+}
+
+.DoomPolice{
+  color: red;
+  font-family: "DOOM";
 }

@@ -1,0 +1,317 @@
+/* On importe la font tf2build sous le nom de tf2 */
+
+@font-face {
+  font-family: "VHS";
+  src: url("../fonts/VCR_OSD_MONO.ttf");
+}
+/* Pour utiliser la font : font-family: 'tf2', sans-serif; */
+/* Simple reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: rubik,helvetica,arial,sans-serif;
+}
+
+/* Variables */
+:root {
+  --nav-height: 50px;
+  --classes-logo-size: 80px;
+}
+
+video{
+  object-fit: fill;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh; /* Important pour avoir un loader qui prends toute la page */
+}
+
+/* Début css du loader */
+#loader {
+  z-index: 999; /* On le met tout en haut niveau hierarchie*/
+  
+  font-family: 'Poppins', sans-serif; 
+  color: #fff;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  height: 100vh;
+  width: 100%;
+  
+  background: #111;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+
+  text-align: center;
+
+  align-items: center;
+  justify-content: center;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+#videoIntro {
+  z-index: 999; /* On le met tout en haut niveau hierarchie*/
+  
+  font-family: 'Poppins', sans-serif; 
+  color: #fff;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  height: 100vh;
+  width: 100%;
+  
+  background: #111;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+
+  text-align: center;
+
+  align-items: center;
+  justify-content: center;
+  
+  transition: opacity .5s ease-in-out;
+}
+
+#loaderMeet span {
+  padding: 15px;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+.loaderLogo{
+  align-items: center;
+  width: 600px;
+  height: auto;
+}
+.MeetLogo {
+  z-index: -1;
+  top:0;
+  left: 0;
+  position: absolute;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.btn {
+  padding: 15px 30px;
+  background: #27272b;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #222;
+}
+/* Fin css du loader */
+
+.topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  height: var(--nav-height);
+  width: 100%;
+}
+
+.topnav .img-logo img {
+  height: calc(var(--nav-height) - 10px);
+  object-fit: contain;
+}
+.topnav a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.middleAutre {
+  
+    display: flex;
+    background-color: rgb(241, 241, 241);
+    background-image: url(../../data/image/Pierre/BackgroundPierre.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    min-height: calc(100vh - var(--nav-height));
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: calc( 15px + var(--nav-height)) 30px 0;
+  
+}
+
+.middleMain {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  background-image: url(../../data/image/BackgroundTF.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  min-height: calc(100vh - var(--nav-height));
+  padding-top: var(--nav-height);
+
+}
+
+.classes {
+  background-color: rgba(253, 253, 253, 0.5);
+  padding: 25px 10%;
+  color: rgb(255, 255, 255);
+  width: 100%;
+}
+.classes td {
+  text-align: center;
+  gap: 25px;
+  padding: 10px 5px;
+  flex-direction: column;
+  align-items: center;
+}
+.classes th {
+  padding-bottom: 15px;
+}
+.classes .img {
+  margin: 0 auto;
+  height: var(--classes-logo-size);
+  width: var(--classes-logo-size);
+}
+.classes .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.classes span {
+  display: block;
+}
+
+footer {
+  display: flex;
+  gap: 25px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 2%;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+}
+
+footer a {
+  color: rgb(255, 255, 255);
+}
+.imgLogo {
+  background-image: url(../../data/image/logoTF2.png);
+}
+
+h1 {
+  font-size: 50px;
+  text-align: left;
+  margin-top: 2%;
+  margin-left: 2%;
+  border: 2mm solid hsla(0, 20%, 8%, 0.6);
+  background-color: hsla(0, 9%, 25%, 0.6); 
+}
+
+h2 {
+  font-size: 30px;
+  text-align: left;
+  margin-top: 2%;
+  margin-left: 2%;
+  border: 2mm solid hsla(0, 0%, 0%, 0.6);
+  background-color: hsla(0, 0%, 50%, 0.6); 
+}
+
+.italique {
+  font-style: italic;
+}
+
+.image-description {
+  font-size: 17px;
+  text-align: left;
+  margin-top: 2%;
+  margin-left: 2%;
+  text-align: center;
+  border: 2mm solid hsla(0, 0%, 0%, 0.6);
+  background-color: hsla(0, 0%, 50%, 0.6); 
+}
+
+.description {
+  font-size: 17px;
+  text-align: left;
+  margin-top: 2%;
+  margin-left: 2%;
+  border: 2mm solid hsla(0, 0%, 0%, 0.6);
+  background-color: hsla(0, 0%, 50%, 0.6); 
+}
+
+.descriptionFire {
+  font-size: 17px;
+  text-align: left;
+  margin-top: 2%;
+  margin-left: 2%;
+  border: 2mm solid hsla(0, 0%, 0%, 0.6);
+  background-color: hsla(0, 0%, 50%, 0.6); 
+  animation: animation 0s ease-in-out infinite alternate;
+  -moz-animation: animation 0s ease-in-out infinite alternate;
+  -webkit-animation: animation 0s ease-in-out infinite alternate;
+  -o-animation: animation 0s ease-in-out infinite alternate;
+}
+
+.pictureClass {
+  font-size: 17px;
+  align-content: right;
+  margin-top: 2%;
+  margin-left: 2%;
+  border: 2mm solid hsla(0, 0%, 0%, 0.6);
+  background-color: hsla(0, 0%, 50%, 0.6); 
+}
+
+.pictureClassButton {
+  font-size: 17px;
+  align-content: right;
+  margin-top: 2%;
+  margin-left: 2%;
+  border: 2mm solid hsla(0, 0%, 0%, 0.6);
+  background-color: hsla(0, 0%, 50%, 0.6); 
+  cursor: pointer; 
+}
+
+.pictureClassButton:hover {
+  background: rgb(155, 85, 5);
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+}
+
