@@ -10,8 +10,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 50px;
   font-family: "DOOM";
-  font-size: 5;
 }
 
 /* Variables */
@@ -122,12 +122,16 @@ body {
   cursor: pointer;
 }
 
-.btn2 {
-  padding: 15px 30px;
+.pictureClassBTN {
+  font-size: 17px;
+  align-content: right;
   margin-top: 2%;
   margin-left: 2%;
-  background: #27272b;
-  cursor: pointer;
+  border: 2mm solid hsla(0, 0%, 0%, 0.6);
+  background-color: hsla(0, 0%, 50%, 0.6);
+  cursor: pointer; 
+  height: var(--classes-logo-size);
+  width: var(--classes-logo-size);
 }
 
 .btn:hover {
@@ -141,7 +145,7 @@ body {
   left: 0;
   display: flex;
   flex-direction: row;
-  background-color: rgb(71, 0, 0);
+  background-color: rgb(134, 2, 2);
   overflow: hidden;
   height: var(--nav-height);
   width: 100%;
@@ -167,7 +171,7 @@ body {
   
     display: flex;
     background-color: rgb(48, 1, 1);
-    background-image: url(../../data/image/Doom/Doom_Slayer.png);
+    background-image: url(../../data/image/Doom/doom-mod-doom-eternal-id-software-fps.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -184,7 +188,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(71, 0, 0);
+  background-color: rgb(134, 2, 2);
   background-image: url(../../data/image/BackgroundTF.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -231,7 +235,7 @@ footer {
   bottom: 0;
   width: 100%;
   padding: 2%;
-  background-color: rgb(71, 0, 0);
+  background-color: rgb(134, 2, 2);
 }
 
 footer a {
@@ -274,7 +278,7 @@ h2 {
 }
 
 .description {
-  font-size: 17px;
+  font-size: 30px;
   text-align: left;
   margin-top: 2%;
   margin-left: 2%;
