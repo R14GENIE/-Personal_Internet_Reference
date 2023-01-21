@@ -24,7 +24,8 @@ function doomMod() {
     //Changement du site
     btnChange.src = "../../data/image/logoMain/Doom.png"
     imageLeft.src = "../../data/image/Doom/OldDoomSlayer.png"
-    document.getElementById("middleAutre").style.backgroundImage = "url('../../data/image/Doom/OldDoomBackground.jpg')";
+    document.getElementsByClassName("middleAutre")[0].style.backgroundImage = "url('../../data/image/Doom/OldDoomBackground.jpg')"
+    //document.getElementsByClassName("middleAutre").style.backgroundImage = "url('../../data/image/Doom/OldDoomBackground.jpg')"
   }
   else{
     audioB.pause();
@@ -33,19 +34,19 @@ function doomMod() {
     //Changement du site
     btnChange.src = "../../data/image/logoMain/OldDoom.png"
     imageLeft.src = "../../data/image/Doom/Doomguy_Eternal.png"
-    document.getElementById("middleAutre").style.backgroundImage = "../../data/image/Doom/OldDoomBackground.jpg";
+    document.getElementsByClassName("middleAutre")[0].style.backgroundImage = "url('../../data/image/Doom/doom-mod-doom-eternal-id-software-fps.jpg')";
   }
   doomModValue = !doomModValue;
 }
 
 audioA.loop = true
+audioB.loop = true
 audioA.volume = 0.1
 audioB.volume = 0.1
-//video.autoplay = true ;
-//video.volume = 0.2;
-videoIntro.style.opacity = 1
-videoIntro.style.display = "none"
-//audioA.play()
+video.autoplay = true ;
+video.volume = 0.2;
+
+
 
 video.onended = (Event) => {
   audioA.play()
