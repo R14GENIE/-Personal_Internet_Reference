@@ -16,6 +16,11 @@
   font-family: "DOOM";
   src: url("../fonts/AmazDooMLeft.ttf");
 }
+
+@font-face {
+  font-family: "Vergil";
+  src: url("../fonts/DIRTYEGO.TTF");
+}
 /* Pour utiliser la font : font-family: 'tf2', sans-serif; */
 /* Simple reset css */
 * {
@@ -335,4 +340,9 @@ iframe {
 .DoomPolice{
   color: red;
   font-family: "DOOM";
+}
+
+.VergilPolice{
+  color: rgb(58, 71, 255);
+  font-family: "Vergil";
 }
