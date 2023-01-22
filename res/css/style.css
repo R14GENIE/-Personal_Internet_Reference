@@ -346,3 +346,11 @@ iframe {
   color: rgb(58, 71, 255);
   font-family: "Vergil";
 }
+
+.ArmStrongPolice{
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: url(../../data/image/logoMain/Flag.png);
+  font-family: rubik,helvetica,arial,sans-serif;
+}

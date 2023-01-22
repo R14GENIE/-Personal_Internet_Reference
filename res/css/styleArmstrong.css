@@ -1,0 +1,356 @@
+/* On importe les fonts si le navigateur ne les à pas */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* On importe la font tf2build sous le nom de tf2 */
+@font-face {
+  font-family: "tf2";
+  src: url("../fonts/tf2build.ttf");
+}
+
+@font-face {
+  font-family: "VHS";
+  src: url("../fonts/VCR_OSD_MONO.ttf");
+}
+
+@font-face {
+  font-family: "DOOM";
+  src: url("../fonts/AmazDooMLeft.ttf");
+}
+
+@font-face {
+  font-family: "Vergil";
+  src: url("../fonts/DIRTYEGO.TTF");
+}
+/* Pour utiliser la font : font-family: 'tf2', sans-serif; */
+/* Simple reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --nav-height: 50px;
+  --classes-logo-size: 80px;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh; /* Important pour avoir un loader qui prends toute la page */
+}
+
+/* Début css du loader */
+#loader {
+  z-index: 999; /* On le met tout en haut niveau hierarchie*/
+  
+  font-family: 'Poppins', sans-serif; 
+  color: #fff;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  height: 100vh;
+  width: 100%;
+  
+  background: #111;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+
+  text-align: center;
+
+  align-items: center;
+  justify-content: center;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+#imageMeet {
+  z-index: 999; /* On le met tout en haut niveau hierarchie*/
+  
+  font-family: 'Poppins', sans-serif; 
+  color: #fff;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  height: 100vh;
+  width: 100%;
+  
+  background: #111;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+
+  text-align: center;
+
+  align-items: center;
+  justify-content: center;
+  
+  transition: opacity .5s ease-in-out;
+}
+
+#loaderMeet span {
+  padding: 15px;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+.loaderLogo{
+  align-items: center;
+  width: 600px;
+  height: auto;
+}
+.MeetLogo {
+  z-index: -1;
+  top:0;
+  left: 0;
+  position: absolute;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.btn {
+  padding: 15px 30px;
+  background: #27272b;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #222;
+}
+/* Fin css du loader */
+
+.topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: #333;
+  overflow: hidden;
+  height: var(--nav-height);
+  width: 100%;
+}
+
+.topnav .img-logo img {
+  height: calc(var(--nav-height) - 10px);
+  object-fit: contain;
+}
+.topnav a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.middleAutre {
+  
+    display: flex;
+    background-color: #3C3D3F;
+    background-image: url(../../data/image/BackgroundTF.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    min-height: calc(100vh - var(--nav-height));
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: calc( 15px + var(--nav-height)) 30px 0;
+  
+}
+
+.middleMain {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3C3D3F;
+  background-image: url(../../data/image/BackgroundTF.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  min-height: calc(100vh - var(--nav-height));
+  padding-top: var(--nav-height);
+
+}
+
+.classes {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 25px 10%;
+  color: #fff;
+  width: 100%;
+}
+.classes td {
+  text-align: center;
+  gap: 25px;
+  padding: 10px 5px;
+  flex-direction: column;
+  align-items: center;
+}
+.classes th {
+  padding-bottom: 15px;
+}
+.classes .img {
+  margin: 0 auto;
+  border: 1.5mm solid #27272b;
+  height: var(--classes-logo-size);
+  width: var(--classes-logo-size);
+}
+.classes .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.classes span {
+  display: block;
+}
+
+footer {
+  display: flex;
+  gap: 25px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 2%;
+  background-color: #27272b;
+}
+
+footer a {
+  color: #fff;
+}
+.imgLogo {
+  background-image: url(../../data/image/logoTF2.png);
+}
+
+h1 {
+  font-size: 50px;
+  text-align: left;
+  margin-top: 2%;
+  margin-left: 2%;
+  border: 2mm solid hsla(38, 11%, 34%, 0.6);
+  background-color: hsla(36, 5%, 37%, 0.6); 
+}
+
+h2 {
+  font-size: 30px;
+  text-align: left;
+  margin-top: 2%;
+  margin-left: 2%;
+  border: 2mm solid hsla(38, 11%, 34%, 0.6);
+  background-color: hsla(36, 5%, 37%, 0.6); 
+}
+
+.italique {
+  font-style: italic;
+}
+
+.image-description {
+  font-size: 17px;
+  text-align: left;
+  margin-top: 2%;
+  margin-left: 2%;
+  text-align: center;
+  border: 2mm solid hsla(38, 11%, 34%, 0.6);
+  background-color: hsla(36, 5%, 37%, 0.6); 
+}
+
+.description {
+  font-size: 17px;
+  text-align: left;
+  margin-top: 2%;
+  margin-left: 2%;
+  border: 2mm solid hsla(38, 11%, 34%, 0.6);
+  background-color: hsla(36, 5%, 37%, 0.6); 
+}
+
+.descriptionFire {
+  font-size: 17px;
+  text-align: left;
+  margin-top: 2%;
+  margin-left: 2%;
+  border: 2mm solid hsla(38, 11%, 34%, 0.6);
+  background-color: hsla(36, 5%, 37%, 0.6); 
+  animation: animation 0s ease-in-out infinite alternate;
+  -moz-animation: animation 0s ease-in-out infinite alternate;
+  -webkit-animation: animation 0s ease-in-out infinite alternate;
+  -o-animation: animation 0s ease-in-out infinite alternate;
+}
+
+.pictureClass {
+  font-size: 17px;
+  align-content: right;
+  margin-top: 2%;
+  margin-left: 2%;
+  border: 2mm solid hsla(38, 11%, 34%, 0.6);
+  background-color: hsla(36, 5%, 37%, 0.6); 
+}
+
+.pictureClassButton {
+  font-size: 17px;
+  align-content: right;
+  margin-top: 2%;
+  margin-left: 2%;
+  border: 2mm solid hsla(30, 17%, 5%, 0.6);
+  background-color: hsla(36, 5%, 37%, 0.6);
+  cursor: pointer; 
+}
+
+.pictureClassButton:hover {
+  background: rgb(155, 85, 5);
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+}
+
+.samPolice{
+  color: rgb(95, 3, 3);
+  font-family: rubik,helvetica,arial,sans-serif;
+}
+
+.minosPolice{
+  color: purple;
+  font-family: "VHS";
+}
+
+.DoomPolice{
+  color: red;
+  font-family: "DOOM";
+}
+
+.VergilPolice{
+  color: rgb(58, 71, 255);
+  font-family: "Vergil";
+}
+
+.ArmStrongPolice{
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: url(../../data/image/logoMain/Flag.png);
+  font-family: rubik,helvetica,arial,sans-serif;
+}
